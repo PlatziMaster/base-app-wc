@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Put your description here.">
+  <base href="/">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #ededed;
+    }
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>my-app</title>
+</head>
+
+<body>
+
+  <mwc-top-app-bar-fixed>
+      <mwc-icon-button icon="menu" slot="navigationIcon"></mwc-icon-button>
+      <div slot="title">My App</div>
+      <mwc-icon-button icon="file_download" slot="actionItems"></mwc-icon-button>
+      <mwc-icon-button icon="print" slot="actionItems"></mwc-icon-button>
+      <mwc-icon-button icon="favorite" slot="actionItems"></mwc-icon-button>
+      <div>
+        <my-app></my-app>
+      </div>
+  </mwc-top-app-bar-fixed>
+  
+
+  <script type="module" src="./src/my-app.js"></script>
+</body>
+
+</html>
